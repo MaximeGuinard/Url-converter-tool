@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyseur SEO d'URLs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Analyseur SEO d'URLs</h1>
+        <div class="input-section">
+            <h2>URLs à analyser</h2>
+            <textarea id="originalUrls" placeholder="Collez vos URLs (une par ligne)"></textarea>
+            <button id="analyzeBtn">Analyser</button>
+        </div>
+        <div id="recommendations" class="recommendations"></div>
+    </div>
+
+    <div id="urlModal" class="modal-overlay">
+        <div class="modal">
+            <button class="modal-close">&times;</button>
+            <h2 id="modalTitle"></h2>
+            <p id="modalMessage"></p>
+            <ul id="modalUrlList" class="url-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
